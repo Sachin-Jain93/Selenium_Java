@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="LogIn(failed)">
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="hubUrl" value="www.google.com"/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="TestCases.Sachin">
+        <methods>
+          <include name="Login"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestCases.Sachin -->
+    </classes>
+  </test> <!-- LogIn(failed) -->
+</suite> <!-- Failed suite [Suite] -->
