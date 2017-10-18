@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2017-10-17T06:54:58Z" name="Default suite" finished-at="2017-10-17T06:55:05Z" duration-ms="6591">
+  <suite started-at="2017-10-18T05:47:32Z" name="Default suite" finished-at="2017-10-18T05:47:37Z" duration-ms="5309">
     <groups>
     </groups>
-    <test started-at="2017-10-17T06:54:58Z" name="Default test" finished-at="2017-10-17T06:55:05Z" duration-ms="6591">
+    <test started-at="2017-10-18T05:47:32Z" name="Default test" finished-at="2017-10-18T05:47:37Z" duration-ms="5309">
       <class name="TestCases.Sachin">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.Sachin@75db5df9]" started-at="2017-10-17T08:54:59Z" name="beforeMethod" finished-at="2017-10-17T08:55:05Z" duration-ms="5736" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Sachin@707194ba]" started-at="2017-10-18T07:47:33Z" name="setup" finished-at="2017-10-18T07:47:37Z" duration-ms="4580" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[java.net.SocketException: Connection reset
@@ -27,7 +27,7 @@ Driver info: driver.version: ChromeDriver
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at TestCases.Sachin.beforeMethod(Sachin.java:35)
+	at TestCases.Sachin.setup(Sachin.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,8 +88,8 @@ Caused by: java.net.SocketException: Connection reset
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Sachin@75db5df9]" started-at="2017-10-17T08:55:05Z" name="Login" data-provider="Authentication" finished-at="2017-10-17T08:55:05Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- setup -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Sachin@707194ba]" started-at="2017-10-18T07:47:37Z" name="Login" data-provider="Authentication" finished-at="2017-10-18T07:47:37Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[java.net.SocketException: Connection reset
@@ -109,7 +109,7 @@ Driver info: driver.version: ChromeDriver
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at TestCases.Sachin.beforeMethod(Sachin.java:35)
+	at TestCases.Sachin.setup(Sachin.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -171,7 +171,7 @@ Caused by: java.net.SocketException: Connection reset
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.Sachin@75db5df9]" started-at="2017-10-17T08:55:05Z" name="afterMethod" finished-at="2017-10-17T08:55:05Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.Sachin@707194ba]" started-at="2017-10-18T07:47:37Z" name="afterMethod" finished-at="2017-10-18T07:47:37Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

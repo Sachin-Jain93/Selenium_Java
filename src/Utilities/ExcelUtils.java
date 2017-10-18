@@ -1,7 +1,7 @@
 package Utilities;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+//import java.io.FileOutputStream;
 import java.io.IOException;
 import org.apache.poi.xssf.usermodel.*;
 
@@ -9,7 +9,7 @@ public class ExcelUtils {
 	private static XSSFSheet ExcelWSheet;
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFCell Cell;
-	private static XSSFRow Row;
+	//private static XSSFRow Row;
 	public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {   
 		String[][] tabArray = null;
 		try {
@@ -22,7 +22,8 @@ public class ExcelUtils {
 			int ci,cj;
 			int totalRows = ExcelWSheet.getLastRowNum();
 			// you can write a function as well to get Column count
-			int totalCols = 2;
+			//int totalCols = 2;
+			int totalCols = ExcelWSheet.getRow(totalRows).getLastCellNum()-1;
 			tabArray=new String[totalRows][totalCols];
 			ci=0;
 			
@@ -45,6 +46,7 @@ public class ExcelUtils {
 		return(tabArray);
 	}
 
+	@SuppressWarnings("deprecation")
 	public static String getCellData(int RowNum, int ColNum) throws Exception {
 		try{
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
