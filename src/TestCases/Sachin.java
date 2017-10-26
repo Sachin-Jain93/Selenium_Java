@@ -25,21 +25,24 @@ public class Sachin {
 	}
 
 	@BeforeMethod
-	@Parameters({"browser","weburl"})
-	public void setup(String browser, String weburl) {		
-		switch(browser){		
-		case "firefox":
-			CommonLibrary.openFireFoxBrowser(weburl);
-			break;
-		case "ie":
-			CommonLibrary.openIEBrowser(weburl);
-			break;
-		case "chrome":
-			CommonLibrary.openChromeBrowser(weburl);
-			break;	
-		}
-	
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	@Parameters({"browser","weburl"})
+//	public void setup(String browser, String weburl) {		
+//		switch(browser){		
+//		case "firefox":
+//			CommonLibrary.openFireFoxBrowser(weburl);
+//			break;
+//		case "ie":
+//			CommonLibrary.openIEBrowser(weburl);
+//			break;
+//		case "chrome":
+//			CommonLibrary.openChromeBrowser(weburl);
+//			break;	
+//		}
+//	
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	}
+	public void setup(){
+		CommonLibrary.openChromeBrowser("www.google.com");
 	}
 
 	@AfterMethod

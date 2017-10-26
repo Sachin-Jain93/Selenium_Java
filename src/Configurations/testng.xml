@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite>
-  <test>
+<suite name="Suite">
+  <test name="Test">
   		<parameter name="browser" value="chrome" />
-  		<parameter name="weburl" value="http://www.google.com" />  
+  		<parameter name="weburl" value="http://www.google.com" />
     <classes>
       <class name="TestCases.Sachin"/>
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
