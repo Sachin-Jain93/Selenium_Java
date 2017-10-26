@@ -28,22 +28,21 @@ public class Sachin {
 	}
 
 	@BeforeMethod
-	@Parameters("browser")
-	public void setup(String browser) {
-
-		if(browser.equalsIgnoreCase("firefox")) {		 
-			driver = new FirefoxDriver();
-		}else if (browser.equalsIgnoreCase("ie")) { 
-			System.setProperty("webdriver.ie.driver", "src/Drivers/IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
-		}else if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "src/Drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+	@Parameters({"browser","weburl"})
+	public void setup(String browser, String weburl) {		
+		switch(browser){		
+		case "firefox":
+			CommonLibrary.openFireFoxBrowser(weburl);
+			break;
+		case "ie":
+			CommonLibrary.openIEBrowser(weburl);
+			break;
+		case "chrome":
+			CommonLibrary.openChromeBrowser(weburl);
+			break;	
 		}
-		
+	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get("http://www.google.com");
 	}
 
 	@AfterMethod
